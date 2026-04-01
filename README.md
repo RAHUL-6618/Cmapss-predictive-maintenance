@@ -49,7 +49,7 @@ Generalization tested on FD003 — different fault modes, zero retraining.
 - 93% on 100 completely unseen test engines
 - 88% on FD003 with different fault modes, no retraining
 
-![Model Results](imgs/cell1_model_engine%208.25.21%20AM.png)
+![Model Results](imgs/cell1_model_engine.png)
 
 **3. RUL Regression — LSTM**
 - Sliding window of 30 cycles as input sequences
@@ -67,7 +67,7 @@ Generalization tested on FD003 — different fault modes, zero retraining.
 - Failing engines: avg 2.85 — 106x spike
 - Most critical sensors: sensors_9, sensors_11, sensors_14
 
-![Sensor Analysis](imgs/cell2_sensors%208.25.21%20AM.png)
+![Sensor Analysis](imgs/cell2_sensors.png)
 
 **5. Generalization Test — FD003**
 - Same trained model, different engines, different fault modes
@@ -82,7 +82,7 @@ Generalization tested on FD003 — different fault modes, zero retraining.
 - Actual failure zone starts at cycle 105
 - 17 cycle early warning lead time
 
-![Synthetic Test](imgs/cell3_synthetic%208.25.21%20AM.png)
+![Synthetic Test](imgs/cell3_synthetic.png)
 
 ---
 
