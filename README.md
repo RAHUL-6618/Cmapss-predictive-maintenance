@@ -2,7 +2,7 @@
 ### EffiCombatEngine — Turbofan Engine Health Monitoring
 
 Predicting jet engine failure before it happens using NASA sensor data.
-Built from scratch on the C-MAPSS FD001 dataset — every line written myself.
+Built from scratch on the C-MAPSS FD001 dataset. 
 
 ---
 
@@ -17,7 +17,7 @@ Takes real turbofan engine sensor readings and tells you:
 
 ## Dataset
 
-NASA C-MAPSS FD001 — 100 engines run until failure, 21 sensors, 26 columns.
+NASA C-MAPSS FD001 —>> 100 engines run until failure, 21 sensors, 26 columns.
 No labels provided. Everything engineered from scratch.
 Generalization tested on FD003 — different fault modes, zero retraining.
 
@@ -72,7 +72,7 @@ Generalization tested on FD003 — different fault modes, zero retraining.
 **5. Generalization Test — FD003**
 - Same trained model, different engines, different fault modes
 - 88% accuracy with no retraining
-- High precision on failure detection (0.93) — low false alarms
+- High precision on failure detection (0.93) —>> low false alarms
 
 ![FD001 vs FD003](imgs/fd001_vs_fd003.png)
 
@@ -96,15 +96,15 @@ Generalization tested on FD003 — different fault modes, zero retraining.
 | **LSTM** | **13.67** | **0.79** |
 
 Single snapshots lose temporal context. 
-LSTM uses 30-cycle windows — sees how sensors trend over time, not just current values.
+LSTM uses 30-cycle windows sees how sensors trend over time, not just current values.
 
 ---
 
 ## Limitations
 
-- Trained on single fault mode. Performance drops on multi-fault data.
+- Trained on single fault mode. Performance drops on multi fault data.
 - RUL regression can improve with attention mechanisms or transformers.
-- No real-time inference pipeline yet.
+- No real time inference pipeline yet.
 
 ---
 
